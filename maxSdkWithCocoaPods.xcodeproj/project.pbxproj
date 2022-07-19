@@ -126,14 +126,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B45416632886D94C0021B243 /* Build configuration list for PBXNativeTarget "maxSdkWithCocoaPods" */;
 			buildPhases = (
-				BF5C90FEA9F723671F9F87AC /* AppLovinQualityService Updater */,
 				072A19E433BFCADB07A8D4B0 /* [CP] Check Pods Manifest.lock */,
+				BF5C90FEA9F723671F9F87AC /* AppLovinQualityService Updater */,
 				B454164B2886D94B0021B243 /* Sources */,
 				B454164C2886D94B0021B243 /* Frameworks */,
 				B454164D2886D94B0021B243 /* Resources */,
 				8A5C0687AE5C327F800AF454 /* [CP] Copy Pods Resources */,
 				6F10265E4292370ADE2C3075 /* AppLovinQualityService Embed Framework */,
 				2ABB60868572743D84AAB22E /* AppLovinQualityService */,
+				56A3CCCE263F6578001D916E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +232,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "AppLovinQualityService/AppLovinQualityServicePlugin.app/Contents/MacOS/AppLovinQualityServicePlugin \"AppLovinQualityServiceSetup-ios.rb\"";
+		};
+		56A3CCCE263F6578001D916E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maxSdkWithCocoaPods/Pods-maxSdkWithCocoaPods-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maxSdkWithCocoaPods/Pods-maxSdkWithCocoaPods-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-maxSdkWithCocoaPods/Pods-maxSdkWithCocoaPods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		8A5C0687AE5C327F800AF454 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

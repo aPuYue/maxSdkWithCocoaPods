@@ -8,5 +8,20 @@ target 'maxSdkWithCocoaPods' do
   # Pods for maxSdkWithCocoaPods
 
   pod 'AppLovinSDK'
+  pod 'AppLovinMediationAdColonyAdapter'
+  pod 'AppLovinMediationFyberAdapter'
+  pod 'AppLovinMediationGoogleAdapter'
+  pod 'AppLovinMediationInMobiAdapter'
+  pod 'AppLovinMediationIronSourceAdapter'
+  pod 'AppLovinMediationLineAdapter'
+  pod 'AppLovinMediationMaioAdapter'
+  pod 'AppLovinMediationMintegralAdapter'
+  pod 'AppLovinMediationNendAdapter'
+  pod 'AppLovinMediationByteDanceAdapter'
+  pod 'AppLovinMediationSmaatoAdapter'
+  pod 'AppLovinMediationTapjoyAdapter'
+  pod 'AppLovinMediationUnityAdsAdapter'
+  pod 'AppLovinMediationVungleAdapter'
+  pod 'AppLovinMediationVerizonAdsAdapter'
 
 end
