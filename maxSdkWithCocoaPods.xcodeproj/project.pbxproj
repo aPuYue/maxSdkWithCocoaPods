@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33B7C2499CE7290AB2BCB4B1 /* Pods_maxSdkWithCocoaPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9F8E90EA6110252D4DF7BA /* Pods_maxSdkWithCocoaPods.framework */; };
 		B45416532886D94B0021B243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45416522886D94B0021B243 /* AppDelegate.swift */; };
 		B45416552886D94B0021B243 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45416542886D94B0021B243 /* SceneDelegate.swift */; };
 		B45416572886D94B0021B243 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45416562886D94B0021B243 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		345371D521266A8BB6DADA91 /* Pods-maxSdkWithCocoaPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maxSdkWithCocoaPods.release.xcconfig"; path = "Target Support Files/Pods-maxSdkWithCocoaPods/Pods-maxSdkWithCocoaPods.release.xcconfig"; sourceTree = "<group>"; };
 		B454164F2886D94B0021B243 /* maxSdkWithCocoaPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maxSdkWithCocoaPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45416522886D94B0021B243 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B45416542886D94B0021B243 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		B454165B2886D94C0021B243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B454165E2886D94C0021B243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B45416602886D94C0021B243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB9F8E90EA6110252D4DF7BA /* Pods_maxSdkWithCocoaPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maxSdkWithCocoaPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B482ED7F32E49FA2595F92 /* Pods-maxSdkWithCocoaPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maxSdkWithCocoaPods.debug.xcconfig"; path = "Target Support Files/Pods-maxSdkWithCocoaPods/Pods-maxSdkWithCocoaPods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33B7C2499CE7290AB2BCB4B1 /* Pods_maxSdkWithCocoaPods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D8E1D072D3520BCFF41D9C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB9F8E90EA6110252D4DF7BA /* Pods_maxSdkWithCocoaPods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87928E7EB25C32251C98E9F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5B482ED7F32E49FA2595F92 /* Pods-maxSdkWithCocoaPods.debug.xcconfig */,
+				345371D521266A8BB6DADA91 /* Pods-maxSdkWithCocoaPods.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B45416462886D94B0021B243 = {
 			isa = PBXGroup;
 			children = (
 				B45416512886D94B0021B243 /* maxSdkWithCocoaPods */,
 				B45416502886D94B0021B243 /* Products */,
+				87928E7EB25C32251C98E9F2 /* Pods */,
+				3D8E1D072D3520BCFF41D9C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B45416632886D94C0021B243 /* Build configuration list for PBXNativeTarget "maxSdkWithCocoaPods" */;
 			buildPhases = (
+				072A19E433BFCADB07A8D4B0 /* [CP] Check Pods Manifest.lock */,
 				B454164B2886D94B0021B243 /* Sources */,
 				B454164C2886D94B0021B243 /* Frameworks */,
 				B454164D2886D94B0021B243 /* Resources */,
+				8A5C0687AE5C327F800AF454 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		072A19E433BFCADB07A8D4B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-maxSdkWithCocoaPods-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A5C0687AE5C327F800AF454 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maxSdkWithCocoaPods/Pods-maxSdkWithCocoaPods-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maxSdkWithCocoaPods/Pods-maxSdkWithCocoaPods-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-maxSdkWithCocoaPods/Pods-maxSdkWithCocoaPods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B454164B2886D94B0021B243 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		B45416642886D94C0021B243 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B482ED7F32E49FA2595F92 /* Pods-maxSdkWithCocoaPods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		B45416652886D94C0021B243 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 345371D521266A8BB6DADA91 /* Pods-maxSdkWithCocoaPods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
