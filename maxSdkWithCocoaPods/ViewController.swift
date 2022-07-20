@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        ALSdk.shared()!.showMediationDebugger()
+
         // Do any additional setup after loading the view.
         self.rewardedAd = MARewardedAd.shared(withAdUnitIdentifier: "df67b45ce946d30d")
         self.rewardedAd.delegate = self
