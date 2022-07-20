@@ -10,7 +10,7 @@ target 'maxSdkWithCocoaPods' do
   pod 'AppLovinSDK'
   pod 'AppLovinMediationAdColonyAdapter'
   pod 'AppLovinMediationFyberAdapter'
-#  pod 'AppLovinMediationGoogleAdapter'
+  pod 'AppLovinMediationGoogleAdapter'
   pod 'AppLovinMediationInMobiAdapter'
   pod 'AppLovinMediationIronSourceAdapter'
   pod 'AppLovinMediationLineAdapter'
